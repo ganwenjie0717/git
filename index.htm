@@ -1,0 +1,23 @@
+#include <stdlib.h>
+ #include <string.h>
+ int main() {
+     int c = 8;
+     system("color 0a");
+     const char* str = "刘 予 瑶!";
+     int len = strlen(str);
+     for (double i = 2.5; i > -2.0; i -= 0.12) {
+         for (double j = -2.5; j < 2.1; j += 0.05) {
+             double a = i*i + j*j - 4;
+             if (a*a*a - j*j*i*i*i < 0.0) {
+                 int n = c % len;
+                 putchar(str[n]);
+                 c++;
+             } else {
+                 putchar(' ');
+             }
+         }
+         putchar('\n');
+     }
+     system("pause");
+     return 0;
+ }
